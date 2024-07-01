@@ -1,0 +1,71 @@
+* {
+    font-family: Copperplate, Copperplate, Fantasy;   
+}
+body {
+    background-color: ghostwhite;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 700px;
+    border: hidden;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: linear-gradient(lightblue, lightcyan);
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+h1 {
+    color: rgba(93, 188, 194, 1.00);
+}
+h3 {
+    font-family: Helvetica, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: cadetblue;
+    color: darkslategrey;
+    font-family: Helvetica, Helvetica, sans-serif;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: lightcyan;
+}
+tr:hover {
+    background-color: aqua;
+}
+.sale-icon {
+    color: darkred;
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: top;
+    position: relative;
+    top: -2px;
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 3px;
+    background-color: white;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}

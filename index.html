@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аптека - Перелік медикаментів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Аптека</h1>
+        </header>
+        <section>
+            <h3>Перелік медикаментів</h3>
+            <table id="medicineTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Назва</th>
+                        <th>Ціна (грн)</th>
+                    </tr>
+                </thead>
+                <tbody id="medicineTableBody">
+                    <!-- Рядки таблиці будуть додані за допомогою JavaScript -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h3>Склад товарів</h3>
+            <div class="button-container">
+                <button onclick="addArrayToTable()">Додати до асортименту</button>
+                <button onclick="searchProduct()">Специфікація товару</button>
+                <button onclick="displayItems()">Показати товари</button>
+                <button onclick="addItem()">Додати товар</button>
+                <button onclick="removeItem()">Видалити товар</button>
+            </div>
+            <div id="storageItems"></div>
+            <div id="productDetails"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
